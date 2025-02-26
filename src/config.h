@@ -5,7 +5,7 @@
  * Configration
  *-------------------------------------------------------------------------*/
 // is110のRev設定
-#define iS110_TYPEA   //is110_TYPEA, is110_TYPEB, is110_TYPEC, 
+#define iS110_TYPEA                               //is110_TYPEA, is110_TYPEB, is110_TYPEC, 
 
 // Wi-Fi アクセスポイント設定
 #define  AP_SSID              "your ssid"         // WiFiアクセスポイント

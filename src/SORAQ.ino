@@ -1,14 +1,16 @@
-char version[] = "toragi_Ver.2.0.0";
+char version[] = "SORAQ_Ver.2.0.1";
 
 #include <GS2200Hal.h>
 #include <HttpGs2200.h>
-#include <SDHCI.h>
 #include <TelitWiFi.h>
-#include <stdio.h>
-#include <Camera.h>
-#include "config.h"
+
+#include <SDHCI.h>
 #include <Flash.h>
+#include <stdio.h>
+
+#include "config.h"
 #include <DNNRT.h>
+#include <Camera.h>
 
 #define CONSOLE_BAUDRATE    115200  //USBシリアル通信速度
 #define LOOP_INTERVAL       1000    //ms　メインループのインターバル
@@ -527,7 +529,6 @@ void GS2200wifiSetup(){
   Serial.println("Start HTTP Client");
   theHttpGs2200.config(HTTP_HEADER_HOST, HTTP_SRVR_IP);
   theHttpGs2200.config(HTTP_HEADER_CONTENT_TYPE, "application/octet-stream");
-
 
   WiFi_InitESCBuffer();
 }
